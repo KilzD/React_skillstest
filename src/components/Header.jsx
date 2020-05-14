@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {AiOutlineExport, AiOutlineGithub} from 'react-icons/ai';
 import style from '../styles/header.less';
+import {ThemeContext} from 'styled-components';
 
 export default function Header() {
+  const theme = useContext(ThemeContext);
   return (
     <div className={style.header}>
       <div>
@@ -13,3 +15,11 @@ export default function Header() {
     </div>
   );
 }
+
+const Button = ({children, className}) => styled(
+    <button className={className}>
+      {children}
+    </button>,
+)`
+    border: ${(theme) => theme.sizes}
+`;
