@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter} from 'react-router-dom';
 import {ThemeProvider} from 'styled-components';
-import theme from '../utils/const/theme';
+import theme from './utils/const/theme';
 
 ReactDOM.render(
     <React.StrictMode>

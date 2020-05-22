@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import {AiOutlineExport, AiOutlineGithub} from 'react-icons/ai';
 import style from '../styles/header.less';
 import {ThemeContext} from 'styled-components';
+import styled from 'styled-components';
 
 export default function Header() {
   const theme = useContext(ThemeContext);
